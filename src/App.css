@@ -1,38 +1,186 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Roboto+Mono:ital,wght@1,300&display=swap');
+body{
+  padding: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main{
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.top{
+  height: 40%;
+  
+  border: 3px solid white;
+  border-bottom-left-radius: 75%  ;
+  border-bottom-right-radius: 75%;
+  border-bottom-color: #439A97;
+}
+.timer{
+  height: 25%;
+  text-align: center;
+  top: 20px;
+  padding: 20px;
+  font-size: 2em;
+  
+
+}
+.timer label{
+  /* border: 3px solid #FF4742; */
+  border-radius: 40%;
+  padding: 2px;
+  color: #439A97;
+}
+.container {
+  margin: 0px;
+  padding: 0px;
+    display: inline-block;
+  }
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+.type-effect{
+  overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    font-size: 2em;
+    width: 0;
+    animation: typing 5s forwards;
+}
+.result{
+  text-align: center;
+  margin: auto;
+}
+.input{
+  height: 17%;
+  text-align: center;
+}
+.input input{
+  width: 80%;
+  height: 80%;
+  margin: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 2em;
+  color: #439A97;
+  padding-left: 22px;
+}
+.input ::placeholder{
+  padding: 22px;
+  color: #439A97;
+  font-family: 'Fira Code', monospace;
+}
+.start{
+  height: 25%;
+  text-align: center;
+  padding-top:80px;
 }
 
-.App-link {
-  color: #61dafb;
+/* CSS */
+.button-24 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  width: 400px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-24:hover{
+  background-color:white;
+  color: #FF4742;
 }
+
+.bottom{
+
+  text-align: center;
+  height: 55%;
+  margin-top: 2px;
+ 
+  
+}
+.paragraph{
+  margin: 2px;
+  padding:10px;
+  height: 100%;
+  border: 3px solid #439A97;
+  font-size: 2.5em ;
+  background-color: #FFF6BF;
+  color: #232324;
+  text-indent: 50px;
+  font-family: 'Fira Code', monospace;
+  overflow: scroll;
+  border-top-left-radius: 37px 140px;
+  border-top-right-radius: 23px 130px;
+  border-bottom-left-radius: 110px 19px;
+  border-bottom-right-radius: 120px 24px;
+}
+.result{
+ display: flex;
+ height: 60%;
+}
+.wpm{
+  width: 50%;
+  text-align: center;
+  margin: 10px;
+  height: 80%;
+}
+.result p{
+  font-weight: bold;
+  font-size: larger;
+  color:#227C70;
+}
+.result a{
+  font-weight: bolder;
+  font: 3em;
+  font-size: xx-large;
+  color: #1C315E;
+  text-decoration: none;
+
+}
+
+.accuracy{
+  width: 50%;
+  text-align: center;
+  height: 80%;
+  margin: 10px;
+}
+.footer{
+  height: 5%;
+  text-align: center;
+  color: #439A97;
+  position: sticky;
+  font-family: 'Fira Code', monospace;
+}
+.sucess{
+  background-color: #e7fbd3;
+  border: 2px solid #0f630f;
+  border-radius: 8px;
+  color: #0f630f;
+}
+.danger{
+  background-color: #fec0ca;
+  border: 2px solid rgb(235, 50, 50);
+  border-radius: 8px;
+  color: #8c0505;
+}
+
